@@ -9,5 +9,21 @@
         <p style="text-align: center;">You are probably trying to access the restricted resource &#128533;</p>
         <p style="text-align: center;">or</p>
         <p style="text-align: center;">It might be under development so please try again later.</p>
+        
+        
+        <script> 
+        var span = document.getElementById('span'); 
+        function time() {
+        var d = new Date();
+        var s = d.getSeconds();
+        var m = d.getMinutes();
+        var h = d.getHours();
+        span.textContent = h + ":" + m + ":" + s;
+        }
+        setInterval(time, 1000);
+        </script> 
+        
+        <span id="span"></span>
+        
     </body>
 </html>
